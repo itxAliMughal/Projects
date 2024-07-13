@@ -1,0 +1,40 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial,Helvetica, sans-serif;
+}
+.container{
+	max-width: 1200px;
+	margin: 0px auto;
+}
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+#header{
+	background-color: #f63232;
+	padding: 22px 0px;
+}
+#logo{
+	color: #fff;
+	border: 6px solid white;
+	border-radius: 35px;
+	width: 14%;
+	text-align: center;
+	margin-left: 41%;
+	padding: 5px 0px;
+}
+#image-container{
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	box-sizing: border-box;
+	height: 900px;
+	padding-top: 100px;
+}
+#head{
+	background-color:#feb614 ;
+	width: 45%;
+	height: 400px;
+}

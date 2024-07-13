@@ -1,0 +1,133 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.container{
+	max-width: 1200px;
+	margin: 0px auto;
+}
+#header{
+	background-color: #f63232;
+	width: 100%;
+	padding: 22px 0px;
+}
+#logo{
+	text-align: center;
+	color: #fff;
+	border: 6px solid #fff;
+	width: 16%;
+	margin-left: 40%;
+	border-radius: 30px;
+}
+#logo h1{
+	padding: 5px 0px;
+}
+#image-container{
+	background-image: url("../images/banner.png");
+	width: 100%;
+	background-repeat: no-repeat;
+	padding-top: 310px;
+	background-size: 100%;
+	box-sizing: border-box;
+	height: 900px;
+}
+#head{
+	background-color: #feb614;
+	width: 45%;
+	height: 270px;
+	color: #fff;
+}
+#head h1{
+	font-size: 105px;
+	padding: 0px 55px;
+}
+#navigation{
+	margin-top: -146px;
+	background-color: #f4f4f4;
+	padding: 20px 0px;
+	text-align: center;
+}
+#navigation ul li{
+	float: left;
+	width: 25%;
+	list-style-type: none;
+}
+#navigation ul li a{
+	color: #8f8f8f;
+	font-size: 26px;
+	text-decoration: none;
+}
+#navigation ul li a:hover{
+	color: red;
+}
+#text{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+#text h1{
+	font-size: 60px;
+	color: red;
+}
+#text h2{
+	margin-bottom: 7px;
+}
+#text h4{
+	line-height: 35px;
+	font-size: 18px;
+	color: #8f8f8f;
+}
+#skill-container{
+	margin-bottom: 80px;
+}
+.skill-items{
+	float: left;
+	width: 40%;
+	margin-left: 70px;
+}
+.skill-items img{
+	width: 100%;
+}
+#testimonial-container{
+	background-color: #f4f4f4;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+#testimonial-container h1{
+	color: #4b4b4b;
+	margin-bottom: 20px;
+	font-size: 35px;
+}
+#testimonial-container p{
+	font-size: 18px;
+	color: #4b4b50;
+	margin-bottom: 30px;
+}
+#testimonial-container button{
+	background-color: #fff;
+	color: #757575;
+	padding: 13px 26px;
+	border: none;
+	border-radius: 30px;
+	font-size: 25px;
+}
+#footer{
+	background-color: #f63232;
+	padding: 30px 0px;
+}
+#footer p{
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+@media screen and (max-width:1096px){
+    #header{
+    	width: 100%;
+    }	
+}

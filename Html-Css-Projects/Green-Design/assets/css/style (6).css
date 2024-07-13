@@ -1,0 +1,195 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.container{
+	max-width: 90%;
+	margin: 0px auto;
+}
+#header{
+	width: 100%;
+	background-color: #151515;
+	padding: 12px 0px;
+}
+#logo{
+	width: 30%;
+	float: left;
+}
+#navigation{
+	width: 31%;
+	float: right;
+	color: #fff;
+	margin-top: 24px;
+}
+#navigation ul li{
+	float: left;
+	margin-right: 16px;
+	list-style-type: none;
+}
+#navigation ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+#navigation ul li:nth-child(even){
+	color: #008000;
+	font-weight: bold;
+}
+#navigation ul li a:hover{
+	color: red;
+}
+#image-container{
+	background-image: url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	padding-top: 85px;
+	box-sizing: border-box;
+	color: #fff;
+}
+#image-container h1{
+	font-size: 70px;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+#image-container h3{
+	font-weight: 100;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+#image-container button{
+	background-color: green;
+	color: #fff;
+	border: none;
+	padding: 13px 20px;
+	border-radius: 5px;
+}
+#image-container button:hover{
+	color: blue;
+	background-color: #fff;
+}
+#skill-container{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.skill-items{
+	float: left;
+	width: 30%;
+	color: #a1a1a1;
+	text-align: center;
+	margin-right: 47px;
+}
+.skill-items h3{
+	font-size: 25px;
+	margin: 10px 0px;
+	color: gray;
+	font-weight: 60;
+}
+.skill-items p{
+	padding: 0px 72px;
+}
+#test{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	border-bottom: 1px solid #a1a1a1;
+	position: relative;
+}
+#test button{
+	position: absolute;
+	background-color: green;
+	color: #fff;
+	border: none;
+	padding: 12px 45px;
+	font-size: 16px;
+	font-weight: 600;
+	top: -20px;
+	left: 40%;
+}
+#test button:hover{
+	background-color: #fff;
+	color: blue;
+	font-size: 20px;
+}
+#testimonial-container{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	position: relative;
+}
+#testimonial-image-2{
+	position: absolute;
+	top: 28px;
+	left: 330px;
+}
+#testimonial-para{
+	position: absolute;
+	top: 85px;
+	left: 330px;
+	text-align: center;
+	color: #a1a1a1;
+}
+#test-2{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	border-bottom: 1px solid #a1a1a1;
+	position: relative;
+}
+#test-2 button{
+	position: absolute;
+	background-color: green;
+	color: #fff;
+	border: none;
+	padding: 12px 65px;
+	font-size: 16px;
+	font-weight: 600;
+	top: -20px;
+	left: 40.5%;
+}
+#test-2 button:hover{
+	background-color: #fff;
+	color: blue;
+	font-size: 20px;
+}
+#footer{
+	margin-top: 40px;
+	margin-bottom: 200px;
+	position: relative;
+	color: #a1a1a1;
+}
+#footer-item-1 p{
+	position: absolute;
+	top: 8px;
+	left: 50px;
+}
+#footer-item-2{
+	position: absolute;
+	top: 45px;
+}
+#footer-item-2 p{
+	position: absolute;
+	top: 6px;
+	left: 53px;
+}
+#footer-item-3{
+	top: 90px;
+	left: 2px;
+	position: absolute;
+}
+#footer-item-3 p{
+	position: absolute;
+	top: 5px;
+	left: 52px;
+}
+#last{
+	margin-bottom: 100px;
+	position: relative;
+}
+#map{
+	position: absolute;
+	bottom: 25px;
+	left: 75%;
+}

@@ -1,0 +1,82 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix::after{
+   content: "";
+   display: table;
+   clear: both;
+}
+.container{
+   max-width: 90%;
+   margin: 0px auto;
+}
+#header{
+   width: 100%;
+   background-color: #151515;
+   padding: 12px 0px;
+}
+#logo{
+   width: 30%;
+   float: left;
+}
+#navigation{
+   float: right;
+   width: 30%;
+   margin-top: 24px;
+   color: #fff;
+}
+#navigation ul li{
+   float: left;
+   list-style-type: none;
+   margin-right: 16px;
+   font-size: 16px;
+}
+#navigation ul li a{
+   color: #fff;
+   text-decoration: none;
+}
+#navigation ul li:nth-child(even){
+   color: #008000;
+   font-weight: bold;
+}
+#navigation ul li a:hover{
+   color: red;
+}
+#image-container{
+   background-image: url(../images/banner.jpg);
+   height: 440px;
+   color: #fff;
+   position: relative;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.button{
+   background-color: hsla(94, 94%, 35%, 1);
+   color: white;
+   padding: 17px 16px;
+   display: inline-block;
+   border: none;
+   font-size: 18px;
+}
+#image-container h1{
+   top: 80px;
+   left: 250px;
+   font-size: 75px;
+   font-weight: 500;
+   position: absolute;
+}
+#image-container h3{
+   top: 170px;
+   left: 260px;
+   font-size: 23px;
+   font-weight: 500;
+   position: absolute;
+}
+#image-container button{
+   position: absolute;
+   top: 250px;
+   left: 258px;
+}

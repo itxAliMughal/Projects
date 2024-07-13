@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ajax Sandbox</title>
+
+    <style>
+      /* LOADER CSS */
+
+      .loader-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.834);
+        z-index: 1;
+        left: 0;
+        top: 0;
+        z-index: 1070;
+      }
+
+      .spinner {
+        width: 64px;
+        height: 64px;
+        border: 8px solid;
+        border-color: #3d5af1 transparent #3d5af1 transparent;
+        border-radius: 50%;
+        animation: spin-anim 1.2s linear infinite;
+      }
+
+      @keyframes spin-anim {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="loader-container" style="display: none">
+      <div class="spinner"></div>
+    </div>
+    <div class="container">
+      <h1>Posts</h1>
+      <a class="btn btn-primary" data-toggle="modal" href="#create-post"
+        >Create Post</a
+      >
+      <div class="modal fade" id="create-post">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title">Create Post</h4>
+            </div>
+            <div class="modal-body">
+              <form action="" method="POST" role="form" id="create-post-form">
+                <div class="form-group">
+                  <label for="">Title</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="post_title"
+                    placeholder="Title"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="">Body</label>
+                  <textarea
+                    name=""
+                    id="post_body"
+                    cols="30"
+                    rows="10"
+                    placeholder="Body"
+                    class="form-control"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDIT POST POPUP -->
+      <div class="modal fade" id="edit-post">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title">Edit Post</h4>
+            </div>
+            <div class="modal-body">
+              <form action="" method="POST" role="form" id="edit-post-form">
+                <input type="hidden" name="post_id" id="edit_post_id" />
+                <div class="form-group">
+                  <label for="">Title</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="edit_post_title"
+                    placeholder="Title"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="">Body</label>
+                  <textarea
+                    name=""
+                    id="edit_post_body"
+                    cols="30"
+                    rows="10"
+                    placeholder="Body"
+                    class="form-control"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- EDIT POST POPUP END -->
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Post Id</th>
+            <th>User Id</th>
+            <th>Title</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="todos-listing">
+          <!-- <tr>
+            <td>asdf</td>
+            <td>asdfa</td>
+            <td>asdfasdf</td>
+            <td>asdfasdf</td>
+            <td>asdfasdf</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

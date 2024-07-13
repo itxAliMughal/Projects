@@ -1,0 +1,167 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: trebuchet MS;
+}
+
+.clearfix::after{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0px auto;
+}
+
+body{
+	background-color: #f7f7f7;
+}
+
+#header{
+	background-color: #e5e5e5;
+	padding: 25px 0px;
+}
+
+#logo{
+	width: 60%;
+	float: left;
+}
+
+#navigation{
+	float: right;
+	width: 40%;
+	margin-top: 10px;
+}
+
+#navigation ul li{
+	float: left;
+	margin-right: 15px;
+	list-style-type: none;
+}
+
+#navigation ul li a{
+	text-decoration: none;
+    color: #4e4e4e;
+	font-weight: 600;
+}
+
+#navigation ul li a:hover{
+	color: #1abb9c;
+}
+
+#banner-container img{
+	width: 100%;
+}
+
+#service-container{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-bottom: 2px solid #dcdcdc;
+	padding-bottom: 40px;
+}
+
+.service-items{
+	float: left;
+	width: 22%;
+	margin-left: 38px;
+	text-align: center;
+	color: #4e4e4e;
+}
+
+.service-items h3{
+	margin: 10px 0px;
+}
+
+#project-container{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#project-container h2{
+	color: #4e4e4e;
+}
+
+#project-sub-container{
+	margin-top: 20px;
+}
+
+.project-items{
+	float: left;
+	width: 32%;
+	margin-right: 10px;
+}
+
+.project-items img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.project-items h2{
+	font-size: 18px;
+}
+.project-items h5{
+	margin: 10px 0px;
+	color: #d0d0d0;
+	font-size: 14px;
+}
+
+.project-items p{
+	font-size: 14px;
+}
+
+#testimonial-container{
+	background-color: #efefef;
+	padding: 60px 0px;
+	text-align: center;
+	color: #a1a1a1;
+}
+
+#testimonial-container img{
+	margin-bottom: 20px;
+}
+
+#footer{
+	background-color: #1e1e1e;
+	padding: 60px 0px;
+	color: #cacaca;
+}
+
+#footer P{
+	line-height: 28px;
+}
+
+#footer h4{
+ color: #6c6c6c;
+ font-weight: 900;
+ font-size: 22px;	
+}
+
+#footer-item-container{
+	border-bottom: 2px solid #363636;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+.footer-items{
+	float: left;
+	width: 23%;
+	margin-right: 25px;
+}
+
+#footer-item-second p{
+	position: relative;
+	padding-left: 20px;
+}
+
+#footer-item-second p::before{
+	position: absolute;
+	background-image: url("../images/tweet.png");
+	background-repeat: no-repeat;
+	left: 0px;
+	content: "";
+	width: 15%;
+	height: 15px;
+	top: 8px;
+}

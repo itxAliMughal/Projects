@@ -1,0 +1,167 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.container{
+	max-width: 90%;
+	margin: 0px auto;
+}
+#header{
+	width: 100%;
+	background-color: #151515;
+	padding: 12px 0px;
+}
+#logo{
+	width: 30%;
+	float: left;
+}
+#navigation{
+	float: right;
+	width: 31%;
+	margin-top: 24px;
+	color: #fff;
+}
+#navigation ul li{
+	float: left;
+	margin-right: 16px;
+	list-style-type: none;
+}
+#navigation ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+#navigation ul li a:hover{
+	color: red;
+}
+#navigation ul li:nth-child(even){
+	font-weight: bold;
+	color: #008000;
+}
+#image-container{
+	background-image: url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	box-sizing: border-box;
+	padding-top: 85px;
+	color: #fff;
+}
+#image-container h1{
+	font-weight: 100;
+	font-size: 70px;
+	margin-bottom: 10px;
+}
+#image-container h3{
+	font-size: 24px;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+#image-container button{
+	background-color: #008000;
+	color: #fff;
+	padding: 13px 20px;
+	border: none;
+	border-radius: 5px;
+}
+#image-container button:hover{
+	background-color: #fff;
+	color: blue;
+}
+#skill-container{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.skill-items{
+	float: left;
+	width: 30%;
+	margin-right: 35px;
+	text-align: center;
+    color: #968888;
+}
+.skill-items h3{
+	font-size: 25px;
+	margin-bottom: 10px;
+        font-weight: 100;  
+}
+.skill-items p{
+	color: ;
+	padding: 0px 70px;
+}
+.button-side{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.button-side h2{
+	width: 24%;
+	background-color: #008000;
+	color: #fff;
+	font-size: 18px;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: -24px;
+	padding: 12px 0px;
+	margin-right: 40%;
+}
+.button-side h2:hover{
+	background-color: #fff;
+	color: blue;
+}
+#testimonial-container{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+#testimonial-container div:nth-child(1){
+	width: 30%;
+	float: left;
+}
+#testimonial-container div:nth-child(1) img{
+	width: 80%;
+}
+#testimonial-container div:nth-child(2){
+	width: 68%;
+	float: right;
+	padding-top: 20px;
+}
+#testimonial-container div:nth-child(2) p{
+	font-style: italic;
+	text-align: center;
+	color: #698888;
+}
+#testimonial-container div:nth-child(2) img{
+	margin-bottom: 20px;
+}
+#location{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+#location-first-item{
+	float: left;
+	width: 60%;
+	color: #698888;
+}
+#location-second-item{
+	float: right;
+	width: 40%;
+	text-align: right;
+}
+#location-first-item div{
+	margin-bottom: 15px;
+}
+#location-first-item div img{
+	float: left;
+}
+#location-first-item div p{
+	float: left;
+	margin-left: 15px;
+	margin-top: 8px;
+}
+#icons{
+	margin-top: 73px;
+}
