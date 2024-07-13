@@ -1,0 +1,36 @@
+npm install react-redux @reduxjs/toolkit react-router-dom
+
+npm install firebase@^9.15.0
+
+
+
+
+
+go to this website
+
+https://console.firebase.google.com
+
+create your project
+
+name of your project
+
+then continue then it will redirect you to in your project
+
+
+then click on web button
+
+register your app and give the name of your register app
+
+
+it will give you the configuration of firebase
+
+then create config/firebaseConfig.js file and paste all the code
+
+then click on build->firestore Database 
+
+then create your firestore database and enable test mode
+
+
+in firebase database
+
+we create the collection then multiple documents

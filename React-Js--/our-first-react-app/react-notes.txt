@@ -1,0 +1,114 @@
+What is React js ?
+
+react js is library/framework of javascript 
+
+examples:
+facebook, netflix, instagram
+
+it is created by facebook
+
+feature javascript
+
+single page application = SPA
+(without refresh url will change)
+
+
+we have top libraries like:
+1-React js
+2-Vue js 
+3-Angular js
+4-Svelte js
+
+
+we can create mobile application after learning the react js
+
+react js is popuplar
+
+
+react js is using jsx (jsx = javascript xml)
+
+react js using babel js
+
+https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYBt1wBQEpEDeAUIqWaQE6pQgVIA8AFgIyIToCGAzlwLwBEjDmAC0AIyEx-iGABMBAdzgUA1jDABzfgD40mOIgDqy9LICE9APQttAbhLlEAXyA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.20.6&externalPlugins=&assumptions=%7B%7D
+
+
+webpack is bundler
+
+we have to download node js from it's website
+
+https://nodejs.org/en
+
+
+npm = node js, pacakge, manager
+
+
+
+
+for installing the react app in your laptop
+
+
+--old way
+npm install create-react-app -g
+create-react-app application-name
+
+
+--new way = it will automatically install and uninstall create-react-app
+npx create-react-app our-first-react-app
+
+inside that directory run this command:
+npm start
+
+
+
+
+React Files
+Get familiar with the files in your React project.
+
+package.json - The main file that defines the dependencies/packages and other settings for your project.
+node_modules - Source code for depencies. Do not touch.
+public - The directory where your static files are stored.
+src/index.js - Main entrypoint to bootstrap the app.
+src/App.js - The root component of the app.
+src/App.spec.js - Unit tests for the app.
+src/*.css - Styles for the app.
+
+
+
+
+re-render = apk component ki html ko refresh kardega
+
+
+
+
+function useStateMuzammil(){
+    return [get,set];
+}
+
+const [getasdfasdfa,setasdasd] = useStateMuzammil()
+
+
+useState k set karane par component re render hora ha hai
+
+render = refresh hora hai component
+
+
+component = specific ui part
+
+
+
+component re rendering basic situation
+
+1-state change
+2-prop change
+3-parent component re-render
+
+
+we will use memo if we want to render a component when it's prop have changed
+
+
+
+
+https://www.w3schools.com/react/react_usememo.asp
+
+
+useMemo();

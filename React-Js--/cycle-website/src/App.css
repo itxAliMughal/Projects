@@ -1,0 +1,31 @@
+* {
+  font-weight: 100;
+}
+
+.container {
+  max-width: 97%;
+  margin: 0 auto;
+}
+
+.section-one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-image {
+  background-image: url(./Images/25524d41438389.57a5f0845cf04.jpg);
+  width: 50%;
+  transform: rotate(300deg);
+  margin-right: 4.1%;
+}
+
+.banner-2 {
+  width: 100vh;
+}
+
+.section-three {
+  margin-top: 110px;
+  margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+}

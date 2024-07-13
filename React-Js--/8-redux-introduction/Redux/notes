@@ -1,0 +1,27 @@
+redux implementation
+
+npm install redux react-redux redux-devtools-extension
+
+-go to src/index.js
+
+import { Provider } from "react-redux";
+
+<Provider store={store}>
+    <App />
+</Provider>
+
+-create redux/configureStore file
+
+import { combineReducers, createStore } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+
+const reducer = combineReducers({
+counter: 0,
+});
+
+export default createStore(reducer, composeWithDevTools());
+
+//add chrome extension
+https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
+
+action->reducer->state->ui-update

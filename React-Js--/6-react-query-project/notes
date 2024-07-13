@@ -1,0 +1,22 @@
+npm install antd
+npm install react-router-dom
+npm install react-query
+
+npm i antd react-router-dom react-query
+
+https://tanstack.com/query/v3/docs/framework/react/installation
+
+caching
+
+jab bi ap data get karoge isko ye auto cache me save karlega
+
+https://tanstack.com/query/latest
+Prefetching
+Auto Caching
+Data Selectors
+Auto Refetching
+Dependent Queries
+
+https://ant.design/components/table/
+
+npm install moment

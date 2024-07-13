@@ -1,0 +1,9 @@
+https://reactrouter.com/en/main
+
+without refresh url will change
+
+single page application (spa)
+
+1-Installation
+
+npm install react-router-dom
